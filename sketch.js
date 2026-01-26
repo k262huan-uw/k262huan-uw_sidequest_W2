@@ -161,6 +161,7 @@ function overlap(a, b) {
 function drawBlobCircle(b) {
   if (b.onGround) {
     fill("blue"); // blob stays blue when on the ground
+    blob3.r = 26;
   } else {
     fill("red"); // turns blob red in air
     blob3.r = 12; // changes blob size in air
@@ -177,7 +178,7 @@ function drawBlobCircle(b) {
       b.t,
     );
 
-    const r = b.r + map(n, 0, 1, -b.wobble, b.wobble);
+    let r = b.r + map(n, 0, 1, -b.wobble, b.wobble);
 
     vertex(b.x + cos(a) * r, b.y + sin(a) * r);
   }

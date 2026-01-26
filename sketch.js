@@ -66,7 +66,7 @@ function draw() {
   if (b.onGround) {
     background("lightblue"); // stays blue when on ground
   } else {
-    fill("black"); // turns red in air
+    background("black"); // turns red in air
   }
 
   // --- Draw all platforms ---

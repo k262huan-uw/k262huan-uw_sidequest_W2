@@ -65,12 +65,13 @@ function setup() {
 function draw() {
   if (blob3.onGround) {
     background("lightblue");
+    fill("lightgreen");
   } else {
     background("black");
+    fill("orange");
   }
 
   // --- Draw all platforms ---
-  fill(200);
   for (const p of platforms) {
     rect(p.x, p.y, p.w, p.h);
   }

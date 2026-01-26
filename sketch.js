@@ -63,11 +63,7 @@ function setup() {
 }
 
 function draw() {
-  if (b.onGround) {
-    background("lightblue"); // stays blue when on ground
-  } else {
-    background("black"); // turns red in air
-  }
+  background(240);
 
   // --- Draw all platforms ---
   fill(200);
@@ -160,8 +156,10 @@ function overlap(a, b) {
 function drawBlobCircle(b) {
   if (b.onGround) {
     fill(20, 120, 255); // stays blue when on ground
+    background("blue");
   } else {
     fill(255, 60, 60); // turns red in air
+    background("black");
   }
   beginShape();
 

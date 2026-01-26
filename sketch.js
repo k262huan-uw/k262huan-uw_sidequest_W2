@@ -64,11 +64,11 @@ function setup() {
 
 function draw() {
   if (blob3.onGround) {
-    background("lightblue");
-    fill("lightgreen");
+    background("teal");
+    fill("green");
   } else {
     background("black");
-    fill("orange");
+    fill("darkpurple");
   }
 
   // --- Draw all platforms ---

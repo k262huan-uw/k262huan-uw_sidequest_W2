@@ -159,12 +159,13 @@ function overlap(a, b) {
 
 // Draws the blob using Perlin noise for a soft, breathing effect
 function drawBlobCircle(b) {
+  let blobR;
   if (b.onGround) {
     fill("blue"); // blob stays blue when on the ground
-    blob3.r = 26;
+    blobR = 26; // original blob size
   } else {
     fill("red"); // turns blob red in air
-    blob3.r = 12; // changes blob size in air
+    blobR = 12; // changes blob size in air
   }
   beginShape();
 

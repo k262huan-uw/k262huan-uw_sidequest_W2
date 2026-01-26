@@ -179,7 +179,7 @@ function drawBlobCircle(b) {
       b.t,
     );
 
-    const r = b.r + map(n, 0, 1, -b.wobble, b.wobble);
+    const r = blobR + map(n, 0, 1, -b.wobble, b.wobble);
 
     vertex(b.x + cos(a) * r, b.y + sin(a) * r);
   }

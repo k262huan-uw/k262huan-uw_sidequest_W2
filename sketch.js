@@ -64,7 +64,7 @@ function setup() {
 
 function draw() {
   if (blob3.onGround) {
-    background("teal"); // background turns teal when blob is on ground
+    background(150, 236, 250); // background turns teal when blob is on ground
     fill("green"); // makes platform green
   } else {
     background("black"); // background turns black when blob is in air

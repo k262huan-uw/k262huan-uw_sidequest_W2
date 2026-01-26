@@ -63,7 +63,11 @@ function setup() {
 }
 
 function draw() {
-  background(240);
+  if (b.onGround) {
+    background("lightblue"); // stays blue when on ground
+  } else {
+    fill("black"); // turns red in air
+  }
 
   // --- Draw all platforms ---
   fill(200);

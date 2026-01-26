@@ -64,11 +64,11 @@ function setup() {
 
 function draw() {
   if (blob3.onGround) {
-    background("teal");
-    fill("green");
+    background("teal"); // background turns teal when blob is on ground
+    fill("green"); // makes platform green
   } else {
-    background("black");
-    fill("darkpurple");
+    background("black"); // background turns black when blob is in air
+    fill(46, 12, 71); // makes platform dark purple
   }
 
   // --- Draw all platforms ---

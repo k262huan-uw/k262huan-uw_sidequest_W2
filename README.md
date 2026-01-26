@@ -1,6 +1,6 @@
 ## Project Title
 
-GBDA302 Week 2 Example 3: Platforms (AABB Collisions)
+GBDA302 Week 2 Example 3 Sidequest: Platforms (AABB Collisions)
 
 ---
 
@@ -13,6 +13,8 @@ Karen Cochrane, David Han, and Katrina Huang
 ## Description
 
 Adds several rectangular platforms. The blob is drawn as a noisy circle but collides using a simple axis-aligned bounding box (AABB). X and Y are resolved separately to keep behaviour predictable and teachable.
+
+When the blob is on the ground, it's surrounded by a nice environment. But when the blob is in the air, it faces a scary environment.
 
 ---
 

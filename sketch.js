@@ -154,7 +154,11 @@ function overlap(a, b) {
 
 // Draws the blob using Perlin noise for a soft, breathing effect
 function drawBlobCircle(b) {
-  fill(20, 120, 255);
+  if (b.onGround) {
+    fill(20, 120, 255); // stays blue when on ground
+  } else {
+    fill(255, 60, 60); // turns red in air
+  }
   beginShape();
 
   for (let i = 0; i < b.points; i++) {

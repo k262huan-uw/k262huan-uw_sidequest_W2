@@ -163,6 +163,7 @@ function drawBlobCircle(b) {
     fill("blue"); // blob stays blue when on the ground
   } else {
     fill("red"); // turns blob red in air
+    blob3.r = 12; // changes blob size in air
   }
   beginShape();
 

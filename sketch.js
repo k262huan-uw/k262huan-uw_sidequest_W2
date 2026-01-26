@@ -63,7 +63,11 @@ function setup() {
 }
 
 function draw() {
-  background(240);
+  if (blob3.onGround) {
+    background("lightblue");
+  } else {
+    background("black");
+  }
 
   // --- Draw all platforms ---
   fill(200);
@@ -155,11 +159,9 @@ function overlap(a, b) {
 // Draws the blob using Perlin noise for a soft, breathing effect
 function drawBlobCircle(b) {
   if (b.onGround) {
-    fill(20, 120, 255); // stays blue when on ground
-    background("blue");
+    fill("blue"); // blob stays blue when on the ground
   } else {
-    fill(255, 60, 60); // turns red in air
-    background("black");
+    fill("red"); // turns blob red in air
   }
   beginShape();
 
